@@ -1,9 +1,11 @@
-const liveserver = require('live-server');
-const params = {
-  host: 'localhost',
-  port: 3000,
-  open: false,
-  root: './client'
-};
+// const liveserver = require('live-server');
+// const params = {
+//   host: 'localhost',
+//   port: 3000,
+//   open: false,
+//   root: './client'
+// };
 
-liveserver.start(params);
+// liveserver.start(params);
+
+console.log(globalThis);
