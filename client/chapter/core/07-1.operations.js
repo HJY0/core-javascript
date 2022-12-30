@@ -2,8 +2,8 @@
 /* Operators                                                              */
 /* ---------------------------------------------------------------------- */
 
-let firstValue = prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1);
-let secondValue = prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2);
+let firstValue = ("덧셈할 첫 번째 숫자를 입력해주세요.", 1);
+let secondValue = ("덧셈할 두 번째 숫자를 입력해주세요.", 2);
 
 console.log(+firstValue + +secondValue);
 

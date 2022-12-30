@@ -25,7 +25,6 @@ let inequal = number[0] != number[3];
 // 동일(똑같다) → boolean
 let same = number[0] === number[3];
 
-
 // 타입까지 체크하려면 ===, !==
 
 
