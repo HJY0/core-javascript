@@ -22,6 +22,7 @@ function handler() {
 
   return function () {
     if (isClicked === true) {
+      // this = .first
       this.style.background = "transparent";
     } else {
       this.style.background = "red";
