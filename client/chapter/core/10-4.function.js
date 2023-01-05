@@ -107,7 +107,7 @@ const memoFibo = (n) => {
 }
 
 memoFibo.cache = {
-  
+  // key valuse
 }
 
 
