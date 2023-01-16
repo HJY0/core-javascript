@@ -1,5 +1,5 @@
 import {getNode} from "./getNode.js"
-import {typeError,SyntaxError,refError} from "../error/error.js"
+import {typeError,refError} from "../error/index.js"
 
 export function getInputValue(node){
   if(typeof node === 'string') node = getNode(node);

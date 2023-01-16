@@ -1,5 +1,5 @@
 import {getNode} from "./getNode.js"
-import {typeError,SyntaxError} from "../error/error.js"
+import {typeError} from "../error/index.js"
 
 export function bindEvent(node,type,handler){
   if(typeof node === 'string'){
