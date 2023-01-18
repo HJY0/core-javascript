@@ -163,10 +163,8 @@ const defaultOptions = {
 }
 
 export function xhrPromise(options = {}){
-  
 
   const xhr = new XMLHttpRequest();
-
 
   const {method,url,body,headers} = Object.assign({},defaultOptions,options);
 

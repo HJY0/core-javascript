@@ -11,7 +11,7 @@ function delay(callback,timeout = 1000){
 }
 
 
-delay(()=>{
+/* delay(()=>{
   first.style.top = '-100px';
 
   delay(()=>{
@@ -21,7 +21,7 @@ delay(()=>{
       first.style.top = '0px';
     })
   })
-})
+}) */
 
 
 const defaultOptions = {
@@ -70,3 +70,20 @@ export function delayP(options = {}){
 }) */
 
 
+
+
+// async await
+
+// async : 일반 함수를 primise를 반환하는 함수로 만든다.
+// await : 1. promise가 반환하는 result를 가져오기
+//         2. 코드 실행 흐름 제어
+//         3. 원치않는 에러가 발생하는 걸 막아줌
+
+
+async function delayA() {
+  return '완료'
+}
+
+let result = await delayA();
+
+// console.log(result);
