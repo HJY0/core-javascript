@@ -1,4 +1,4 @@
-import { insertLast, xhrData, xhrPromise } from "./lib/index.js"
+import { delayP, hong, insertLast, xhrData, xhrPromise } from "./lib/index.js"
 
 
 /* xhrData.get(
@@ -49,6 +49,7 @@ xhr.send(); */
 
 
 
+/* promise */
 
 /* xhrPromise
 .get('https://jsonplaceholder.typicode.com/users/1')
@@ -59,5 +60,10 @@ xhr.send(); */
   console.log(err);
 }) */
 
+async function render() {
+  await delayP(2000);
+  let response = await hong.get('https://jsonplaceholder.typicode.com/users/1')
+  console.log(response);
+}
 
-
+render()
