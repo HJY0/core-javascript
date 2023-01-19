@@ -24,18 +24,10 @@ export const hong = async (optins = {}) => {
     headers: {...defaultOptions.headers, ...optins.headers} // 얕복을 한 번 더 한 거
   }
 
-  let response = await fetch(
-    'https://jsonplaceholder.typicode.com/users/1',
-    {
-      method:'GET',
-      headers:{
-        'Content-Type': 'application/json'
-      }
-    }
-  )
+  let response = await fetch(url,restOptions);
 
   if(response.ok){
-    response.data = await response.json()
+    response.data = await response.json();
   }
 
   return response;
